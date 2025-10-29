@@ -2,9 +2,9 @@ name: Send content to be machine translated
 
 on:
   workflow_dispatch:
-  schedule:
+  # schedule:
     # At 1 am everyday
-    - cron: '0 1 * * *'
+    #- cron: '0 1 * * *'
 
 env:
   TRANSLATION_VENDOR_API_URL: ${{ secrets.TRANSLATION_VENDOR_API_URL }}
